@@ -30,6 +30,13 @@ html {
   color: #D4C17F;
 }
 
+.site-logo p {
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.13rem;
+  text-transform: uppercase;
+}
+
 .header {
   max-width: 1920px;
   width: 100%;
@@ -50,12 +57,6 @@ html {
           justify-content: space-between;
   font-family: "Raleway", sans-serif;
   color: #fff;
-}
-.header-site-logo p {
-  padding-top: 1.5rem;
-  font-size: 1.2rem;
-  letter-spacing: 0.13rem;
-  text-transform: uppercase;
 }
 .header-site-menu nav ul {
   display: -webkit-box;
@@ -360,6 +361,9 @@ main {
           transform: translate(-50%, -50%);
   background: url(../img/icons/play.svg) no-repeat center/cover;
 }
+.video-main:hover::before {
+  cursor: pointer;
+}
 .video-main::after {
   content: "IV";
   position: absolute;
@@ -412,6 +416,66 @@ main {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+}
+
+.footer {
+  max-height: 370px;
+  height: 100%;
+  padding: 6rem 0;
+  background-color: #2D343C;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-family: "Raleway", sans-serif;
+}
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  max-height: 155px;
+  padding-left: 10rem;
+}
+.footer-menu li {
+  margin-bottom: 1.5rem;
+}
+.footer-contacts ul li {
+  margin-bottom: 1.5rem;
+}
+.footer-contacts ul li:last-child {
+  margin-bottom: 0;
+}
+.footer-contacts ul li a {
+  display: inline-block;
+  color: #D4C17F;
+  font-weight: bold;
+}
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-social img:not(:last-child) {
+  margin-right: 2rem;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
