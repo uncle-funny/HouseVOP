@@ -62,3 +62,47 @@
 .check-out
   background: url(../img/form-bg.jpg) no-repeat center / cover
   height: 560px
+  padding: 18rem 0
+  color: $color-white
+  &-wrapper
+    margin-top: 3rem
+    @include flex(center, space-between)
+  &-text
+    max-width: 535px
+    font-family: $font-Raleway
+    font-size: 16px
+    line-height: 24px
+  &-form
+    max-width: 540px
+    flex-wrap: wrap
+    @include flex(center,space-between)
+.form
+  
+  input, p, button
+    width: 255px
+    height: 50px      
+  input
+    border: none
+    background-color: rgba(255,255,255,.2)
+    padding: 0 2rem
+    font-size: 1.4rem
+    font-family: $font-Raleway
+    color: #BEBEBE
+    margin-bottom: 3.5rem
+  p
+    text-align: center
+    font-size: 1.3rem
+    font-family: $font-Raleway
+    line-height: 1.6rem
+    color: #e7e7e7
+    @include flex(center,center)
+  button
+    border: none
+    background-color: $color-main
+    font-family: $font-Raleway
+    font-weight: bold
+    font-size: 16px
+    line-height: 27px
+    color: $color-white
+    &:hover
+      cursor: pointer
