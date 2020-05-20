@@ -303,6 +303,7 @@ html {
   font-size: 1.4rem;
   font-family: "Raleway", sans-serif;
   color: #BEBEBE;
+  text-align: center;
 }
 .form p {
   max-width: 255px;
@@ -336,6 +337,41 @@ html {
 }
 .form button:hover {
   cursor: pointer;
+}
+
+.video {
+  background-color: #242B33;
+  text-align: center;
+  padding-bottom: 180px;
+}
+.video-main {
+  position: relative;
+}
+.video-main::before {
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../img/icons/play.svg) no-repeat center/cover;
+}
+.video-main::after {
+  content: "IV";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -200px;
+  display: block;
+  font-size: 400px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  color: #fff;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

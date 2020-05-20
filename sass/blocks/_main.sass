@@ -88,6 +88,7 @@
     font-size: 1.4rem
     font-family: $font-Raleway
     color: #BEBEBE
+    text-align: center
   p
     max-width: 255px
     height: 50px
@@ -110,3 +111,34 @@
     color: $color-white
     &:hover
       cursor: pointer
+
+
+.video
+  background-color: $color-bg-section
+  text-align: center
+  padding-bottom: 180px
+  &-main
+    position: relative
+    &::before
+      content: ""
+      width: 10rem
+      height: 10rem
+      display: block
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      background: url(../img/icons/play.svg) no-repeat center / cover
+    &::after
+      content: "IV"
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: -200px
+      display: block
+      font-size: 400px
+      font-weight: bold
+      font-family: $font-Playfair
+      opacity: .02
+      color: #fff
+      
