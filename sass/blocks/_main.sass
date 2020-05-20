@@ -1,6 +1,7 @@
+main
+  background-color: $color-bg-section
 .features
   padding: 12rem
-  background-color: $color-bg-section
   color: $color-white
   &-cards
     @include flex(center,space-between)
@@ -29,7 +30,6 @@
       color: #fff
 
 .apartments
-  background-color: $color-bg-section
   &-cards
     margin-top: 10rem
     @include flex(center,space-between)
@@ -114,7 +114,6 @@
 
 
 .video
-  background-color: $color-bg-section
   text-align: center
   padding-bottom: 180px
   &-main
@@ -134,7 +133,7 @@
       position: absolute
       top: 50%
       transform: translateY(-50%)
-      right: -200px
+      right: -215px
       display: block
       font-size: 400px
       font-weight: bold
@@ -142,3 +141,20 @@
       opacity: .02
       color: #fff
       
+
+.map
+  &-block
+    margin-top: 10rem
+    padding-bottom: 18rem
+    position: relative
+    &::after
+      content: "V"
+      position: absolute
+      top: -150px
+      left: -150px
+      display: block
+      font-size: 400px
+      font-weight: bold
+      font-family: $font-Playfair
+      opacity: .02
+      color: #fff

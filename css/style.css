@@ -166,9 +166,12 @@ html {
   background: url(../img/icons/phone.svg) no-repeat center/cover;
 }
 
+main {
+  background-color: #242B33;
+}
+
 .features {
   padding: 12rem;
-  background-color: #242B33;
   color: #fff;
 }
 .features-cards {
@@ -209,9 +212,6 @@ html {
   color: #fff;
 }
 
-.apartments {
-  background-color: #242B33;
-}
 .apartments-cards {
   margin-top: 10rem;
   display: -webkit-box;
@@ -340,7 +340,6 @@ html {
 }
 
 .video {
-  background-color: #242B33;
   text-align: center;
   padding-bottom: 180px;
 }
@@ -365,7 +364,25 @@ html {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: -200px;
+  right: -215px;
+  display: block;
+  font-size: 400px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  color: #fff;
+}
+
+.map-block {
+  margin-top: 10rem;
+  padding-bottom: 18rem;
+  position: relative;
+}
+.map-block::after {
+  content: "V";
+  position: absolute;
+  top: -150px;
+  left: -150px;
   display: block;
   font-size: 400px;
   font-weight: bold;
