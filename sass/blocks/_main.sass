@@ -26,3 +26,35 @@
       font-weight: bold
       font-family: $font-Playfair
       opacity: .02
+      color: #fff
+
+.apartments
+  background-color: $color-bg-section
+  &-cards
+    margin-top: 10rem
+    @include flex(center,space-between)
+    flex-wrap: wrap
+    position: relative
+    &-card
+      max-width: 535px
+      margin-bottom: 3rem
+      position: relative
+      &__title
+        position: absolute
+        left: 5rem
+        bottom: 5rem
+        font-family: $font-Raleway
+        color: $color-white
+        font-size: 2.4rem
+    &::before
+      content: "III"
+      position: absolute
+      top: -170px
+      left: -230px
+      display: block
+      font-size: 400px
+      font-weight: bold
+      font-family: $font-Playfair
+      opacity: .02
+      color: #fff
+  
