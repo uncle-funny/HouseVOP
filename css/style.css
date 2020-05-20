@@ -252,6 +252,11 @@ html {
   color: #fff;
 }
 
+.check-out {
+  background: url(../img/form-bg.jpg) no-repeat center/cover;
+  height: 560px;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     max-width: 960px;
