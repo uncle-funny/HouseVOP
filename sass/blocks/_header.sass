@@ -2,3 +2,99 @@
   max-width: 1920px
   width: 100%
   height: 840px
+  background: url(../img/header-bg.jpg) no-repeat center center / cover
+  &-site
+    padding-top: 3rem
+    @include flex(center,space-between)
+    font-family: $font-Raleway
+    color: $color-white
+    &-logo
+      p
+        padding-top: 1.5rem
+        font-size: 1.2rem
+        letter-spacing: 0.13rem
+        text-transform: uppercase
+    &-menu
+      nav
+        ul
+          display: flex
+          li
+            margin-right: 4rem
+            position: relative
+            &::after
+              content: ""
+              display: block
+              position: absolute
+              bottom: -7px
+              width: 100%
+              height: 1px
+              background-color: $color-main 
+              transition: all .3s ease
+              transform: scale(0)
+              transform-origin: left  
+            &:hover
+              &::after
+                transform: scale(1)
+            &:last-child
+              margin-right: 0
+            a
+              font-size: 1.4rem
+  &-title
+    max-width: 556px
+    padding-top: 20rem
+    margin: 0 auto
+    text-align: center   
+    margin-bottom: 10rem
+    h1
+      color: $color-main
+      font-family: $font-Playfair
+      font-weight: 700
+      font-size: 4.8rem
+      line-height: 6.4rem
+  &-mouse
+    width: 24px
+    height: 40px
+    margin: 0 auto
+    border: 3px solid $color-main
+    border-radius: 50px
+    position: relative
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 8px
+      left: 50%
+      transform: translateX(-50%)
+      width: 2px
+      height: 8px
+      border-radius: 50%
+      background-color: $color-main
+  &-contacts
+    @include flex(center,center)
+    padding-top: 20rem
+    color: $color-white
+    font-size: 1.8rem
+    font-family: $font-Raleway
+    &__place
+      margin-right: 136px
+      position: relative
+      &::before
+        content: ""
+        display: block
+        position: absolute
+        left: -4rem
+        width: 15px
+        height: 21px
+        background: url(../img/icons/place.svg) no-repeat center / cover
+    &__tel
+      position: relative
+      &::before
+        content: ""
+        display: block
+        position: absolute
+        left: -4rem
+        width: 21px
+        height: 21px
+        background: url(../img/icons/phone.svg) no-repeat center / cover
+        
+
