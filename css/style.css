@@ -326,7 +326,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.form .button {
+.form button {
   max-width: 255px;
   width: 100%;
   height: 50px;
@@ -335,11 +335,10 @@ main {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 16px;
-  text-align: center;
-  line-height: 50px;
+  line-height: 27px;
   color: #fff;
 }
-.form .button:hover {
+.form button:hover {
   cursor: pointer;
 }
 
@@ -349,6 +348,21 @@ main {
 }
 .video-main {
   position: relative;
+}
+.video-main::before {
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../img/icons/play.svg) no-repeat center/cover;
+}
+.video-main:hover::before {
+  cursor: pointer;
 }
 .video-main::after {
   content: "IV";
